@@ -1,1 +1,4 @@
-python3 setup.py sdist upload -r pypi
+#! /bin/bash
+rm -rf dist
+python setup.py sdist
+twine upload dist/*
